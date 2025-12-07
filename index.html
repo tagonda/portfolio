@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tess Gonda - Aspiring Software Engineer specializing in cybersecurity and Python automation">
+    <title>Tess Gonda - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                Tess Gonda
+                <img src="https://64.media.tumblr.com/e1e6e5ba9a0ae3feabe0bc105d521487/ee247f500ad639c0-0b/s75x75_c1/c0d47cc1802849076ea42c0215e07abc3b6b6d37.gifv" alt="" class="logo-gif">
+            </a>
+            <div style="display: flex; align-items: center; gap: 2.5rem; flex-wrap: wrap;">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-toggle-text">Dark</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Software Engineer.</span>
+                    <span class="title-line">Cybersecurity Enthusiast.</span>
+                    <span class="title-line">Designer & Developer.</span>
+                </h1>
+                <p class="hero-description">
+                    Computer Science student at Michigan State University with hands-on experience 
+                    in cybersecurity, Python automation, and machine learning optimization.
+                </p>
+                <div class="hero-cta">
+                    <a href="projects.html" class="btn-primary">View My Work</a>
+                    <a href="contact.html" class="btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-work">
+            <div class="section-header">
+                <h2 class="section-title">Featured Experience</h2>
+            </div>
+            
+            <div class="work-grid">
+                <article class="work-card">
+                    <div class="work-number">01</div>
+                    <h3 class="work-title">Cybersecurity Intern</h3>
+                    <p class="work-company">Epson America, Inc.</p>
+                    <p class="work-description">
+                        Analyzed email security telemetry and developed Python automation scripts 
+                        to enhance threat detection accuracy and streamline security workflows.
+                    </p>
+                    <span class="work-date">Jun - Aug 2025</span>
+                </article>
+
+                <article class="work-card">
+                    <div class="work-number">02</div>
+                    <h3 class="work-title">SpartaHack X Winner</h3>
+                    <p class="work-company">thereMINI Project</p>
+                    <p class="work-description">
+                        Built a wearable theremin using FREE-WILi device, integrating C/C++ and 
+                        Python for accelerometer data processing and MIDI conversion.
+                    </p>
+                    <span class="work-date">2025</span>
+                </article>
+
+                <article class="work-card">
+                    <div class="work-number">03</div>
+                    <h3 class="work-title">US Rater</h3>
+                    <p class="work-company">Telus Digital</p>
+                    <p class="work-description">
+                        Contributed to machine learning model optimization through systematic 
+                        feedback on search engine outputs and algorithm performance evaluation.
+                    </p>
+                    <span class="work-date">Jul 2024 - Apr 2025</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="skills-showcase">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-heading">Languages</h3>
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>C/C++</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                        <li>ARM Assembly</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-heading">Web Technologies</h3>
+                    <ul class="skill-list">
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                        <li>Responsive Design</li>
+                        <li>API Integration</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-heading">Specializations</h3>
+                    <ul class="skill-list">
+                        <li>Cybersecurity</li>
+                        <li>Automation</li>
+                        <li>Machine Learning</li>
+                        <li>Data Structures</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">&copy; 2025 Tess Gonda. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/tess-gonda/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+                <a href="mailto:tagonda@gmail.com" class="footer-link">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dark mode toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeToggleText = document.querySelector('.theme-toggle-text');
+        const html = document.documentElement;
+        
+        // Check for saved theme preference or default to 'light'
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', currentTheme);
+        themeToggleText.textContent = currentTheme === 'dark' ? 'Light' : 'Dark';
+        
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggleText.textContent = newTheme === 'dark' ? 'Light' : 'Dark';
+        });
+    </script>
+</body>
+</html>

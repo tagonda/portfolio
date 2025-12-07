@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Tess Gonda - Get in touch for opportunities and collaborations">
+    <title>Contact - Tess Gonda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                Tess Gonda
+                <img src="https://64.media.tumblr.com/e1e6e5ba9a0ae3feabe0bc105d521487/ee247f500ad639c0-0b/s75x75_c1/c0d47cc1802849076ea42c0215e07abc3b6b6d37.gifv" alt="" class="logo-gif">
+            </a>
+            <div style="display: flex; align-items: center; gap: 2.5rem; flex-wrap: wrap;">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-toggle-text">Dark</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="page-header">
+            <h1 class="page-title">Let's Connect</h1>
+            <p class="page-subtitle">I'm always interested in new opportunities!</p>
+        </section>
+
+        <section class="contact-content">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="contact-heading">Get In Touch</h2>
+                    <p class="contact-description">
+                        Whether you have a project in mind, want to discuss opportunities, or 
+                        just want to say hello, I'd love to hear from you. Feel free to reach 
+                        out through any of the channels below.
+                    </p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <h3 class="method-title">Email</h3>
+                            <a href="mailto:tagonda@gmail.com" class="method-link">tagonda@gmail.com</a>
+                        </div>
+
+                        <div class="contact-method">
+                            <h3 class="method-title">Phone</h3>
+                            <a href="tel:+12489494750" class="method-link">248-949-4750</a>
+                        </div>
+
+                        <div class="contact-method">
+                            <h3 class="method-title">Location</h3>
+                            <p class="method-text">East Lansing, MI</p>
+                        </div>
+
+                        <div class="contact-method">
+                            <h3 class="method-title">LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/tess-gonda/" target="_blank" rel="noopener noreferrer" class="method-link">linkedin.com/in/tess-gonda</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h2 class="contact-heading">Send a Message</h2>
+                    <p class="form-description">
+                        Fill out the form below and I'll get back to you as soon as possible.
+                    </p>
+                    
+                    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="form-input" 
+                                required 
+                                placeholder="Your name"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input" 
+                                required 
+                                placeholder="your.email@example.com"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input 
+                                type="text" 
+                                id="subject" 
+                                name="subject" 
+                                class="form-input" 
+                                required 
+                                placeholder="What's this about?"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="form-textarea" 
+                                required 
+                                rows="6"
+                                placeholder="Tell me more about what you have in mind..."
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="opportunities-section">
+            <h2 class="opportunities-title">What I'm Looking For</h2>
+            <div class="opportunities-grid">
+                <div class="opportunity-card">
+                    <h3 class="opportunity-title">Software Engineering Roles</h3>
+                    <p class="opportunity-description">
+                        Full-stack development, backend systems, or specialized areas like 
+                        automation and API development.
+                    </p>
+                </div>
+                <div class="opportunity-card">
+                    <h3 class="opportunity-title">Cybersecurity Positions</h3>
+                    <p class="opportunity-description">
+                        Security analysis, threat detection, automation of security workflows, 
+                        or SOC operations.
+                    </p>
+                </div>
+                <div class="opportunity-card">
+                    <h3 class="opportunity-title">Technical Projects</h3>
+                    <p class="opportunity-description">
+                        Collaborative projects involving Python, C/C++, machine learning, 
+                        or innovative hardware-software integration.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">&copy; 2025 Tess Gonda. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/tess-gonda/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+              
+    <script>
+        // Dark mode toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeToggleText = document.querySelector('.theme-toggle-text');
+        const html = document.documentElement;
+        
+        // Check for saved theme preference or default to 'light'
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', currentTheme);
+        themeToggleText.textContent = currentTheme === 'dark' ? 'Light' : 'Dark';
+        
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggleText.textContent = newTheme === 'dark' ? 'Light' : 'Dark';
+        });
+    </script>
+</body>
+</html>

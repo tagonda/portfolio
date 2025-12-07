@@ -980,16 +980,25 @@ body {
 @media (max-width: 768px) {
     .nav-container {
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1rem;
+        padding: 1rem 1.5rem;
     }
 
     .nav-menu {
         gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
     .theme-toggle {
         margin-left: 0;
-        margin-top: 0.5rem;
+        margin-top: 0;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .logo {
+        text-align: center;
     }
 
     .hero {
@@ -1008,6 +1017,10 @@ body {
     .about-image-container,
     .project-image-container {
         margin: 1.5rem 0;
+    }
+
+    .main-content {
+        padding-top: 12rem;
     }
 
     .featured-work,
@@ -1067,6 +1080,21 @@ body {
 
     .nav-link {
         font-size: 0.875rem;
+    }
+
+    .nav-container {
+        padding: 1rem;
+    }
+
+    .theme-toggle {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+        width: auto;
+        min-width: 120px;
+    }
+
+    .main-content {
+        padding-top: 13rem;
     }
 }
 
